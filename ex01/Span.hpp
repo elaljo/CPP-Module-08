@@ -6,7 +6,7 @@
 /*   By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 17:26:21 by moelalj           #+#    #+#             */
-/*   Updated: 2025/01/08 10:37:31 by moelalj          ###   ########.fr       */
+/*   Updated: 2025/01/09 18:40:53 by moelalj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ class Span{
         void    addmanyNumbers(std::vector<int> vec);
         int     shortestSpan();
         int     longestSpan();
-
         void    print();
 };
 #endif

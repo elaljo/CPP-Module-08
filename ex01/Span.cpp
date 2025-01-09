@@ -6,7 +6,7 @@
 /*   By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 17:31:00 by moelalj           #+#    #+#             */
-/*   Updated: 2025/01/08 10:52:02 by moelalj          ###   ########.fr       */
+/*   Updated: 2025/01/09 18:48:30 by moelalj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void    Span::addmanyNumbers(std::vector<int> vec){
 }
 int    Span::shortestSpan(){    
     if (myVector.size() <= 1)
-        throw "no span can be found";
+        throw "No span can be found";
         
     std::vector<int>::iterator it;
     int max = INT_MAX;
@@ -70,11 +70,11 @@ int     Span::longestSpan(){
         throw "no span can be found";
 
     std::vector<int>::iterator it;
-    int max = 0;
+    int longest = 0;
     
     std::sort(myVector.begin(), myVector.end());
-    max = *(myVector.end() - 1) - *(myVector.begin());
-    return max;
+    longest = *(myVector.end() - 1) - *(myVector.begin());
+    return longest;
 }
 
 void    Span::print(){
